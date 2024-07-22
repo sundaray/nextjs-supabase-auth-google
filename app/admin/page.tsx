@@ -1,7 +1,9 @@
-import { supabase } from "@/lib/supabase/client-db";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function AdminPage() {
-  // Fetch all users from the public users table
+
+  const supabase = createClient();
+
   const { data: users, error } = await supabase
     .from("users")
     .select("id, email, role");

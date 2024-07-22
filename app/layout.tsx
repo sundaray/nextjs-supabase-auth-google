@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { MainNav } from "@/components/main-nav";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Supase Auth + Next.js Demo",
+  title: "Supabase Auth + Next.js Demo",
 };
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MainNav />
         <main className="flex-1 p-10">{children}</main>
+        <Toaster />
       </body>
     </html>
   );

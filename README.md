@@ -1,6 +1,6 @@
-# nextjs-supabase-auth-google
+# About
 
-An example project on integrating Google Sign-In with Next.js and Supabase Auth.
+An example project on integrating Google Sign-in in Next.js using Supabase Auth.
 
 # Course
 
